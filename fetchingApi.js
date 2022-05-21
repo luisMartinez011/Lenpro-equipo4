@@ -6,10 +6,16 @@ const options = {
     }
 };
 
+const imagen = document.createElement("img");
+const testClass = document.getElementById("imagen");
+
+
 fetch('https://deezerdevs-deezer.p.rapidapi.com/album/302127', options)
     .then(response => response.json())
-    .then(response => console.log(response.tracks.data))
+    .then(res => {
+        console.log(res)
+        imagen.src = res.cover
+        testClass.appendChild(imagen)
+    })
     .catch(err => console.error(err));
-
-const testClass = document.getElementsByClassName("test");
 
