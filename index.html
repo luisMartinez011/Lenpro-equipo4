@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/Styles.css">
     <link rel="stylesheet" href="./font.css">
     <link rel="stylesheet" href="./css/Albums.css">
+
+
     <title>PIA</title>
 </head>
 <body>
@@ -16,16 +18,51 @@
             <h1 class="banner__title"></h1>
             <p class="banner__p"></p>
         </div>
-    </section>
-    
+        <div class="container">
+            <div class="lbl-menu">
+                <label for="radio1">Inicio</label>
+                <label for="radio2">Servicios</label>
+                <label for="radio3">Música</label>
+                <label for="radio4">Contacto</label>
+            </div>
+            
+            <div class="content">
+               
+                <input type="radio" name="radio" id="radio1" checked>
+                <div class="tab1">
+                    <h2>Inicio</h2>
+                    <p>Bienvenidos a nuestra pagina web hecha por el equipo 4 de la materia de lenguajes de programacion en la cual podran disfrutar de una variedad de música. </p>
+                </div>
+                
+                <input type="radio" name="radio" id="radio2">
+                <div class="tab2">
+                    <h2>Servicios</h2>
+                    <p>Los servicios de musica que se utilizaron para poder darle vida a la pagina fueron Spotify y Soundcloud los cuales puedes adquirir por una cierta cantidad de dinero al mes, sus links se pueden ver en el lateral derecho de la pagina.</p>
+                </div>
+                
+                <input type="radio" name="radio" id="radio3">
+                <div class="tab3">
+                    <h2>Música</h2>
+                    <p>La música es muy importente para el ser humano por la emociones que nos puede llegar a transmitir con simplemente escucharla o al momento de tocar algun instrumento musical, por ejemplo al momento de escuchar una bateria poder llegar a percibir el sonido estruendoso que este ocasiona y las vibraciones, otro caso seria los elementos aerófonos como en la mas comun de estas la flauta,la trompeta y el saxofon</p>
+                </div>
+                
+                <input type="radio" name="radio" id="radio4">
+                <div class="tab4">
+                    <h2>Contacto</h2>
+                    <p>Para mas informacion contacte con el desarrollador de la pagina Equipo4Lab.deprogra@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>  
     <div class="social-bar">
         <a href="https://www.spotify.com/mx/" class="icon icon-spotify" target="_blank"></a>
         <a href="https://soundcloud.com/" class="icon icon-soundcloud" target="_blank"></a>
     </div>
+    
 
-    <!--No borrar este div-->
     <div id="albums">
-        <h1>Recomendaciones</h1>
+
+
     </div>
 
     <script src="./fetchingApi.js"></script>
