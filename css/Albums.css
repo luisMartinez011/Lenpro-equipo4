@@ -1,0 +1,22 @@
+#albums{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+
+#albums div{
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    border: 3px solid black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#albums div audio {
+    width: 80%;
+    margin:10px ;
+}
